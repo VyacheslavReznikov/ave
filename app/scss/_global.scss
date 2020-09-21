@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	height: 100%;
 }
 
 *,
@@ -25,18 +26,22 @@ ul, li {
 }
 
 a {
+	display: inline-block;
 	text-decoration: none;
 	color: inherit;
 }
 
-html, body {
+body {
 	height: 100%;
+	background-color: $bg;
+	font-size: 13px;
 }
 
 .wrapper {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 .content {
@@ -44,7 +49,36 @@ html, body {
 }
 
 .container {
-	max-width: 1170px;
+	max-width: 1800px;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	&--middle {
+		max-width: 1200px;
+	}
+
+	&--fluid {
+		max-width: 100%;
+	}
+}
+
+.banner {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 52px 50px;
+	font-size: 36px;
+	line-height: 48px;
+	background-color: $dark;
+	color: #fff;
+	@include font400;
+	transition: all 0.5s;
+
+	span {	
+		@include font700;
+	}
+
+	&:hover {
+		color: $accent;
+	}
+
 }

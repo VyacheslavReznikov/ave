@@ -1,26 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Home</title>
+	<link rel="stylesheet" href="libs/fontawesome/all.min.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
 	<div class="wrapper">
 		<div class="content">
-			<header class="header"></header>
+			<header class="header">
+				<div class="header__top header-top">
+					<div class="container container--middle">
+						<div class="header-top__inner">
+							<form class="header-top__currency currency">
+								<div class="currency__label">Currency:</div>
+								<select class="currency__select">
+									<option value="GBP">GBP</option>
+									<option value="USD">USD</option>
+									<option value="RUB">RUB</option>
+								</select>
+							</form>
+							<div class="header-top__items">
+								<a class="header-top__link" href="#">Register</a>
+								<a class="header-top__link" href="#">Sigh In</a>
+								<a class="header-top__basket" href="#">empty</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__bottom header-bottom">
+					<div class="container">
+						<div class="header-bottom__inner">
+							<a class="header-bottom__logo" href="#">
+								<img class="header-bottom__image" src="images/logo.png" alt="logo">
+							</a>
+							<div class="header-bottom__items">
+								<nav class="header-bottom__menu menu">
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a class="menu__link menu__link--parent" href="#">Mens</a>
+											<div class="menu__dropdown dropdown">
+												<div class="dropdown__content">
+													<div class="dropdown__column">
+														<div class="dropdown__title">Casual</div>
+														<ul class="dropdown__list">
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Jackets</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Hoodies & Sweatshirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Polo Shirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Sportswear</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Trousers & Chinos</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">T-Shirts</a>
+															</li>
+														</ul>
+													</div>
+													<div class="dropdown__column">
+														<div class="dropdown__title">Formal</div>
+														<ul class="dropdown__list">
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Jackets</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Shirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Suits</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Trousers</a>
+															</li>													
+														</ul>
+													</div>
+												</div>
+												<div class="dropdown__banner">
+													<a class="banner" href="#">
+														<span>Autumn sale! </span>up to 50% off
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link menu__link--parent" href="#">Womens</a>
+											<div class="menu__dropdown dropdown">
+												<div class="dropdown__content">
+													<div class="dropdown__column">
+														<div class="dropdown__title">Casual</div>
+														<ul class="dropdown__list">
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Jackets</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Hoodies & Sweatshirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Polo Shirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Sportswear</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Trousers & Chinos</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">T-Shirts</a>
+															</li>
+														</ul>
+													</div>
+													<div class="dropdown__column">
+														<div class="dropdown__title">Formal</div>
+														<ul class="dropdown__list">
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Jackets</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Shirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Suits</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Trousers</a>
+															</li>													
+														</ul>
+													</div>
+												</div>
+												<div class="dropdown__banner">
+													<a class="banner" href="#">
+														<span>Autumn sale! </span>up to 50% off
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link" href="#">The Brand</a>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link menu__link--parent" href="#">Local Stores</a>
+											<div class="menu__dropdown dropdown">
+												<div class="dropdown__content">
+													<div class="dropdown__column">
+														<div class="dropdown__title">Casual</div>
+														<ul class="dropdown__list">
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Jackets</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Hoodies & Sweatshirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Polo Shirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Sportswear</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Trousers & Chinos</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">T-Shirts</a>
+															</li>
+														</ul>
+													</div>
+													<div class="dropdown__column">
+														<div class="dropdown__title">Formal</div>
+														<ul class="dropdown__list">
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Jackets</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Shirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Suits</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Trousers</a>
+															</li>													
+														</ul>
+													</div>
+												</div>
+												<div class="dropdown__banner">
+													<a class="banner" href="#">
+														<span>Autumn sale! </span>up to 50% off
+													</a>
+												</div>
+											</div>
+										</li>
+										<li class="menu__item">
+											<a class="menu__link menu__link--parent" href="#">Look Book</a>
+											<div class="menu__dropdown dropdown">
+												<div class="dropdown__content">
+													<div class="dropdown__column">
+														<div class="dropdown__title">Casual</div>
+														<ul class="dropdown__list">
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Jackets</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Hoodies & Sweatshirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Polo Shirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Sportswear</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Trousers & Chinos</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">T-Shirts</a>
+															</li>
+														</ul>
+													</div>
+													<div class="dropdown__column">
+														<div class="dropdown__title">Formal</div>
+														<ul class="dropdown__list">
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Jackets</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Shirts</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Suits</a>
+															</li>
+															<li class="dropdown__item">
+																<a class="dropdown__link" href="#">Trousers</a>
+															</li>													
+														</ul>
+													</div>
+												</div>
+												<div class="dropdown__banner">
+													<a class="banner" href="#">
+														<span>Autumn sale! </span>up to 50% off
+													</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</nav>
+								<form class="header-bottom__search search">
+									<input class="search__input" type="search" placeholder="Search..">
+									<button class="search__btn" type="submit"><i class="fas fa-search"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+			</header>
 			<main class="main"></main>
 		</div>
 		<footer class="footer"></footer>
 	</div>
-	
+
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
+
 </html>
