@@ -123,7 +123,8 @@
 		&:hover {
 			.dropdown {
 				transition: all 0.3s;
-				transform: translateY(0);			
+				// transform: translateY(0);			
+				transform: scaleY(1);			
 			}
 		}
 	}
@@ -161,7 +162,8 @@
 	}
 
 	&__dropdown {
-		transform: translateY(-200%);
+		// transform: translateY(-200%);
+		transform: scaleY(0);
 	}
 }
 

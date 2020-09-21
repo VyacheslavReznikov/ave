@@ -1,0 +1,141 @@
+.footer {
+
+	&__top {}
+
+	&__body {
+		padding: 60px 0;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 55px;
+	}
+
+	&__column {
+		flex: 0 0 20%;
+	}
+
+	&__title {
+		@include font700;
+		color: $title;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	&__list {}
+
+	&__item {
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link {
+		display: block;
+		@include font300;
+		color: $text;
+		font-size: 14px;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+
+	&__address {}
+
+	&__address-map {
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+
+	&__address-phone {
+		margin-bottom: 10px;
+	}
+
+	&__address-map,
+	&__address-phone,
+	&__address-email {
+		display: block;
+		font-style: normal;
+		font-size: 14px;
+		color: $text;
+		@include font300;
+		line-height: 20px;
+
+		transition: all 0.3s;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+
+	&__items {
+		display: flex;
+	}
+
+	&__items-column {
+		flex: 0 1 48%;
+		margin-right: 4%;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__items-social {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__bottom {
+		background-color: $dark;
+		color: $grey;
+	}
+
+	&__bottom-line {
+		padding: 15px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__bottom-copy {}
+
+	&__bottom-links {
+		display: flex;
+	}
+
+	&__bottom-text {
+		margin-left: 35px;
+	}
+
+	&__bottom-link {
+		transition: all 0.3s;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+}
+
+.social {
+	background-color: $accent;
+
+	&__link {
+		margin: 0 25px;
+		font-size: 36px;
+		color: #fff;
+
+		transition: all 0.3s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}

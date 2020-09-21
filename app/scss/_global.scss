@@ -80,5 +80,14 @@ body {
 	&:hover {
 		color: $accent;
 	}
+}
 
+.btn {
+	cursor: pointer;
+	border: 2px solid rgb(115, 115, 115);
+	padding: 20px 30px;
+	@include font400;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+	color: #454647;	
 }
