@@ -1,0 +1,143 @@
+.cities {
+	background-color: #fff;
+
+	&__inner {
+		padding: 60px 0;
+	}
+
+	&__list {
+		display: flex;
+		margin-left: -30px;
+	}
+
+	&__item {
+		flex: 0 1 375px;
+		padding-right: 5px;
+		margin-left: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title,
+	&__subtitle {
+		text-transform: uppercase;
+		@include font700;
+		color: $title;
+	}
+
+	&__title {
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
+
+	&__subtitle {
+		margin-bottom: 20px;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		font-size: 15px;
+		line-height: 22px;
+		@include roboto;
+		color: $text;
+		margin-bottom: 35px;
+	}
+
+	&__btn {
+		align-self: start;
+	}
+}
+
+.stores {
+	background-color: #fff;
+	padding-bottom: 120px;
+
+	&__inner {
+		display: flex;
+		min-height: 530px;
+	}
+
+	&__map {
+		flex: 0 0 66.666%;
+	}
+
+	&__info {
+		flex: 0 0 33.333%;
+		padding: 40px;
+		background-color: $bg;
+	}
+
+	&__title,
+	&__subtitle {
+		text-transform: uppercase;
+		@include font700;
+		color: $title;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__subtitle {
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 22px;
+		@include roboto;
+		color: $text;
+		margin-bottom: 25px;
+	}
+
+	&__address {
+		font-style: normal;
+		margin-bottom: 60px;
+	}
+
+	&__line {
+		font-size: 14px;
+		color: $text;
+		margin-bottom: 15px;
+		i {
+			margin-right: 10px;
+			color: $title;
+			font-size: 14px;
+		}
+
+		a {
+			transition: all 0.3s;
+
+			&:hover {
+				color: $accent;
+			}
+		}
+	}
+
+	&__social {
+		display: flex;
+	}
+
+	&__social-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 15px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		color: #fff;
+		font-size: 18px;
+		background-color: $dark;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: $accent;
+		}
+	}
+}

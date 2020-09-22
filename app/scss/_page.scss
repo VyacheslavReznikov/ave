@@ -1,0 +1,206 @@
+.page {
+	background-color: #fff;	
+	padding-top: 60px;
+
+	&__inner {
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;	
+		padding-bottom: 60px;
+	}
+
+	&__controls {
+		padding: 55px 0 60px;
+	}
+
+	&__btn {
+		cursor: pointer;
+		@include font700;
+		text-transform: uppercase;
+		color: $text;
+		border: 1px solid transparent;
+		background-color: transparent;
+		margin-right: 55px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		transition: all 0.3s;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+
+	&__wrapper {}
+
+	&__cards {}
+}
+
+.products {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+
+
+	&__item {
+
+		position: relative;
+
+		&--big {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+
+		&:hover {
+			.products__button {
+				transform: translateX(-50%) scale(1);
+			}
+		}
+
+		&--active {
+			box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+		}
+	}
+
+	&__content {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__price {
+		position: absolute;
+		left: 15px;
+		top: 15px;
+		color: #9a9a9a;
+		font-size: 21px;
+		@include font300;
+		padding-left: 10px;
+	}
+
+	&__currency {
+		font-size: 15px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__button {
+		cursor: pointer;
+		background-color: transparent;
+		border-color: transparent;
+		position: absolute;
+		left: 50%;
+		transform: scale(0);
+		top: 60%;
+		font-size: 48px;
+		color: #fff;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $accent;
+		}
+	}
+
+	&__info {
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 5;
+		background-color: #fff;
+		padding: 17px 55px;
+		text-align: center;
+		display: none;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		color: $title;
+		@include font700;
+		margin-bottom: 17px;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 22px;
+		color: $text;
+		margin-bottom: 12px;
+	}
+
+	&__items {}
+
+	&__btn {
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		border-color: transparent;
+		background-color: $dark;
+		color: #fff;
+		margin: 0 8px;
+
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: $accent;
+		}
+	}
+}
+
+.cards-page {
+	padding-top: 60px;
+	padding-bottom: 120px;
+
+	&__list {
+		display: flex;
+		margin-left: -30px;
+	}
+
+	&__item {
+		flex: 0 1 100%;
+		margin-left: 30px;
+		text-align: right;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__content {
+		padding: 60px;
+		padding-left: 0;
+		max-width: 60%;
+		margin: 0 0 0 auto;
+	}
+
+	&__title {
+		@include font400;
+		color: $title;
+		font-size: 48px;
+		line-height: 54px;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+
+		span {
+			@include font700;
+		}
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 22px;
+		@include roboto;
+		margin-bottom: 25px;
+	}
+
+	&__btn {}
+}

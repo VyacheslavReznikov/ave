@@ -75,12 +75,13 @@
 
 	&__items {
 		display: flex;
+		margin-left: -30px;
 	}
 
 	&__items-column {
-		flex: 0 1 48%;
-		margin-right: 4%;
-
+	flex: 0 1 565px;
+		width: 100%;
+		margin-left: 30px;
 		&:last-child {
 			margin-right: 0;
 		}
