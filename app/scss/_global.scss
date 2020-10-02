@@ -107,9 +107,9 @@ body {
 	@include font700;
 	font-size: 16px;
 	text-transform: uppercase;
-	letter-spacing: 0.2px;
+	letter-spacing: 2px;
 	color: #454647;
-
+	background-color: transparent;
 	transition: all 0.3s;
 
 	&:hover {

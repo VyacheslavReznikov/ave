@@ -124,7 +124,7 @@
 			.dropdown {
 				transition: all 0.3s;
 				// transform: translateY(0);			
-				transform: scaleY(1);			
+				transform: scaleY(1);
 			}
 		}
 	}
@@ -141,7 +141,7 @@
 		}
 
 		&--parent {
-			position: relative;			
+			position: relative;
 
 			&::after {
 				content: '\f107';
@@ -162,7 +162,6 @@
 	}
 
 	&__dropdown {
-		// transform: translateY(-200%);
 		transform: scaleY(0);
 	}
 }
@@ -224,15 +223,26 @@
 	width: 190px;
 	display: flex;
 	border: 1px solid #e7e7e7;
-	outline: transparent;
+
+	transition: all 0.3s;
+
+	&:hover {
+		border-color: rgb(187, 84, 101);
+	}
 
 	&__input {
 		height: 30px;
 		max-width: 100%;
-		border: none;
+		border: 1px solid transparent;;
 		background-color: transparent;
+		outline: transparent;
 		padding-right: 35px;
-		padding-left: 10px;
+		padding-left: 10px;	
+
+		&:focus {
+			border-color: rgb(187, 84, 101);
+			background-color: #fcf6f7;
+		}
 
 		&::placeholder {
 			color: #989898;
